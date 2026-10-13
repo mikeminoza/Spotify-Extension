@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div id="login-bar" class="bar" hidden>
+    <span class="bar-text">You're not logged in to Spotify.</span>
+    <button id="login" class="bar-login" type="button">Log in</button>
+    <button id="dismiss" class="bar-dismiss" type="button" aria-label="Dismiss">&times;</button>
+  </div>
+  <iframe
+    id="spotify"
+    title="Spotify"
+    allow="autoplay; encrypted-media; clipboard-read; clipboard-write; fullscreen; picture-in-picture"
+  ></iframe>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
